@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.cardAPI {
+  text-align: center;
+  margin: 20px;
+  font-size: 4rem;
+}
+body {
+  background-color: #3138a0cb;
+}
+.card_div {
+  max-width: 100%;
+  color: #fff;
+}
+.container {
+  width: 100%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.card {
+  margin: 50px 10px;
+  text-align: center;
+  transition: 0.3s;
+  padding: 5px 10px;
+  height: 350px;
+  width: 300px;
+
+  border-radius: 11px;
+  background: #31399f;
+  box-shadow: 10px 10px 20px #2f3697, -10px -10px 20px #333ca7;
+}
+.card h1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.img {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(45deg, #234cbe, #153463, #234cbe);
+  border-radius: 50%;
+  outline: none;
+  border: 4px solid rgb(43, 118, 168);
+  outline: 5px solid #153463;
+  margin-left: 80px;
+  margin-top: -70px;
+  font-size: 80px;
+  padding-top: 10px;
+}
+
+.add {
+  text-align: start;
+  padding: 5px 10px;
+}
+.add i {
+  margin: 7px 0;
+}
+.add span {
+  margin-left: 20px;
+}
+.add p {
+  padding: 2px;
+  transition: 0.3s;
+}
+.fa-solid {
+  margin-right: 15px;
+  transition: 0.3s;
+}
+.card h3 {
+  padding: 10px 0 20px 0;
+  transition: 0.3s;
+}
+button {
+  padding: 5px 8px;
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 6px;
+  border: 1px solid transparent;
+  color: rgba(48, 47, 47, 0.712);
+  background-image: linear-gradient(
+    to left,
+    hsl(189.19, 88.94%, 46.08%) 0%,
+    hsl(190.04, 86.72%, 46.18%) 9.2%,
+    hsl(190.79, 85.1%, 46.21%) 16.8%,
+    hsl(191.45, 83.85%, 46.2%) 23.3%,
+    hsl(192.05, 82.83%, 46.18%) 28.7%,
+    hsl(192.59, 81.98%, 46.14%) 33.5%,
+    hsl(193.11, 81.22%, 46.1%) 37.8%,
+    hsl(193.63, 80.52%, 46.05%) 41.9%,
+    hsl(194.17, 79.81%, 46%) 46.1%,
+    hsl(194.78, 79.07%, 45.93%) 50.7%,
+    hsl(195.5, 78.25%, 45.85%) 55.9%,
+    hsl(196.37, 77.33%, 45.74%) 61.9%,
+    hsl(197.45, 76.28%, 45.61%) 69.1%,
+    hsl(198.82, 75.06%, 45.43%) 77.6%,
+    hsl(200.59, 73.66%, 45.2%) 87.8%,
+    hsl(202.91, 72.05%, 44.9%) 100%
+  );
+}
+.card:hover {
+  border-radius: 21px;
+  box-shadow: 9px 9px 30px #101340, -9px -9px 30px #3e4bff;
+}
+.fa-solid:hover,
+.add p:hover,
+.card h3:hover {
+  cursor: pointer;
+  color: #8f8f8f;
+}
+button:hover {
+  border-radius: 7px;
+  color: rgba(43, 43, 43, 0.87);
+  box-shadow: 9px 9px 30px #101340, -9px -9px 30px #3e4bff;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 95%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 95%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+}
